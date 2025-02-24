@@ -14,6 +14,7 @@
     "@emotion/styled": "^11.14.0",
     "@mui/icons-material": "^6.4.5",
     "@mui/joy": "^5.0.0-beta.51",
+    "@splinetool/react-spline": "^4.0.0",
     "@types/three": "^0.173.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

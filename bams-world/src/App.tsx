@@ -9,6 +9,9 @@ import AppleModal from './components/AppleModal';
 import GlobeComponent from './components/Globe'; // Import the Globe component
 import './App.css';
 import './index.css';
+import SplineScene from "./components/SplineScene";
+
+
 
 export default function App() {
   const [cloudModalOpen, setCloudModalOpen] = useState(false);
@@ -132,6 +135,8 @@ export default function App() {
 
       {/* Apple Modal */}
       <AppleModal open={appleModalOpen} handleClose={handleAppleModalClose} />
-    </Box>
+      
+      {/* Spline Scene */}
+      <SplineScene></SplineScene> </Box>
   );
 }
