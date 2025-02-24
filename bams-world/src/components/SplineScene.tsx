@@ -7,10 +7,10 @@ const SplineScene: React.FC = () => {
   useEffect(() => {
     const updateScale = () => {
       const screenWidth = window.innerWidth;
-      
+
       // Adjust scaling based on viewport width
       if (screenWidth < 768) {
-        setScale(0.7); // Zoom out for mobile
+        setScale(1.1); // Zoom in a bit more for mobile
       } else if (screenWidth < 1024) {
         setScale(0.85); // Slight zoom-out for tablets
       } else {
@@ -26,7 +26,11 @@ const SplineScene: React.FC = () => {
   return (
     <div 
       className="spline-container" 
-      style={{ transform: `scale(${scale})`, transformOrigin: "center center" }}
+      style={{
+        transform: `scale(${scale})`,
+        transformOrigin: "center center",
+        transition: "transform 0.3s ease-out"  // Smooth transition
+      }}
     >
       <Spline scene="https://prod.spline.design/8DfhO7IyUPI07Ddb/scene.splinecode" />
     </div>
