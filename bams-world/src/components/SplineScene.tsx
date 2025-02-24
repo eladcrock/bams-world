@@ -32,7 +32,7 @@ const SplineScene: React.FC = () => {
         transition: "transform 0.3s ease-out"  // Smooth transition
       }}
     >
-      <Spline scene="https://prod.spline.design/8DfhO7IyUPI07Ddb/scene.splinecode" />
+      <Spline scene="https://prod.spline.design/pb3ez9oP07QOnotw/scene.splinecode" />
     </div>
   );
 };
