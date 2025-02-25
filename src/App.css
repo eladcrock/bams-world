@@ -1,0 +1,65 @@
+#root {
+  width: 100%; /* Ensure root takes full width */
+  margin: 0 auto;
+  text-align: center;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+
+
+@keyframes standardOrbitAndShrink {
+  0% {
+    transform: scale(1) translate(0, 0);
+    opacity: 1;
+  }
+  70% {
+    transform: scale(0.5) translate(100px, -100px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.2) translate(200px, -200px); /* Shrink and move off-screen */
+    opacity: 0; /* Fade out */
+  }
+}
+
+.Box-animation {
+  animation: standardOrbitAndShrink 4s ease-out forwards; /* Standard orbit and smooth shrinking */
+}
+
+
+
+
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.Box-animation {
+  animation: rollAway 5s ease-in-out forwards; /* Longer animation duration */
+}
