@@ -6,26 +6,39 @@ import CloudQueue from '@mui/icons-material/CloudQueue';
 import YouTubeIcon from '@mui/icons-material/YouTube'; // Import the YouTube icon
 import CloudModal from './components/CloudModal';
 import AppleModal from './components/AppleModal';
+<<<<<<< HEAD
 import GlobeComponent from './components/Globe'; // Import the Globe component
+=======
+>>>>>>> 35867c9 (first commit)
 import './App.css';
 import './index.css';
 import SplineScene from "./components/SplineScene";
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 35867c9 (first commit)
 export default function App() {
   const [cloudModalOpen, setCloudModalOpen] = useState(false);
   const [appleModalOpen, setAppleModalOpen] = useState(false);
   const [videoModalOpen, setVideoModalOpen] = useState(false);
+<<<<<<< HEAD
   const [showGlobe, setShowGlobe] = useState(true); // State to control globe visibility
   const [showHeader, setShowHeader] = useState(false); // State to control header visibility
   const [globeSize, setGlobeSize] = useState('100%'); // Control the globe size
+=======
+  const [showHeader, setShowHeader] = useState(false); // State to control header visibility
+>>>>>>> 35867c9 (first commit)
 
   useEffect(() => {
     // Sequence of animations
     const timer = setTimeout(() => {
+<<<<<<< HEAD
       setGlobeSize('50%'); // Shrink the globe
       setShowGlobe(false); // Hide globe after shrink and bounce
+=======
+>>>>>>> 35867c9 (first commit)
       setShowHeader(true); // Show header
     }, 4000); // Delay for all animations to finish
 
@@ -43,6 +56,10 @@ export default function App() {
 
   return (
     <Box
+<<<<<<< HEAD
+=======
+      className="fade-in"
+>>>>>>> 35867c9 (first commit)
       sx={{
         width: '100%',
         margin: '0',
@@ -60,6 +77,7 @@ export default function App() {
     >
       <CssBaseline />
       
+<<<<<<< HEAD
       {/* Conditionally render the globe with animation */}
       {showGlobe && (
         <Box sx={{
@@ -82,14 +100,27 @@ export default function App() {
             Bam’s World 🌍
           </Typography>
           <Typography level="body-lg">
+=======
+      {showHeader && (
+        <>
+          <Typography level="h1" sx={{ fontWeight: 'bold', fontSize: '3rem' }} className="fade-in">
+            Bam’s World 🌍
+          </Typography>
+          <Typography level="body-lg" className="fade-in">
+>>>>>>> 35867c9 (first commit)
             Welcome to the world of Lhul Bam. <br />
             Vibe out, and stay connected.
           </Typography>
         </>
       )}
 
+<<<<<<< HEAD
       {/* Icons Section Below the Globe */}
       <Box sx={{ display: 'flex', gap: 3, mt: 3 }}>
+=======
+      {/* Icons Section Below the Header */}
+      <Box sx={{ display: 'flex', gap: 3, mt: 3 }} className="fade-in">
+>>>>>>> 35867c9 (first commit)
         <IconButton onClick={handleVideoModalOpen} sx={{ color: '#fff' }}>
           <YouTubeIcon sx={{ fontSize: 40 }} />
         </IconButton>
@@ -137,6 +168,14 @@ export default function App() {
       <AppleModal open={appleModalOpen} handleClose={handleAppleModalClose} />
       
       {/* Spline Scene */}
+<<<<<<< HEAD
       <SplineScene></SplineScene> </Box>
   );
 }
+=======
+      <br/>
+      <SplineScene />
+    </Box>
+  );
+}
+>>>>>>> 35867c9 (first commit)
