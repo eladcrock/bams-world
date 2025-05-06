@@ -27,58 +27,22 @@ body, html {
 
 
 
-<<<<<<< HEAD
-@keyframes standardOrbitAndShrink {
-  0% {
-    transform: scale(1) translate(0, 0);
-    opacity: 1;
-  }
-  70% {
-    transform: scale(0.5) translate(100px, -100px);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(0.2) translate(200px, -200px); /* Shrink and move off-screen */
-    opacity: 0; /* Fade out */
-  }
-}
-
-.Box-animation {
-  animation: standardOrbitAndShrink 4s ease-out forwards; /* Standard orbit and smooth shrinking */
-}
-
-
-
-=======
->>>>>>> 35867c9 (first commit)
 
 
 
 @keyframes fadeIn {
-<<<<<<< HEAD
-  0% {
-    opacity: 0;
-  }
-  100% {
-=======
   from {
     opacity: 0;
   }
   to {
->>>>>>> 35867c9 (first commit)
     opacity: 1;
   }
 }
 
-<<<<<<< HEAD
-.Box-animation {
-  animation: rollAway 5s ease-in-out forwards; /* Longer animation duration */
-=======
 .fade-in {
   animation: fadeIn 2s ease-in-out;
 }
 
 .card {
   padding: 2em;
->>>>>>> 35867c9 (first commit)
 }
